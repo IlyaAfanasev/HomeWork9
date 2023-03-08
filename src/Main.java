@@ -44,10 +44,12 @@ public class Main {
     public static void task3() {
         System.out.println("     Задача 3");
         int[] arr = generateRandomArray();
-        int sum = 0;
+        double sum = 0;
+        double averageSum;
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
-        System.out.println("Средняя сумма трат за месяц составила-" +sum/ arr.length+" рублей");
+        averageSum=sum/ arr.length;
+        System.out.printf("Средняя сумма трат за месяц составила-%.2f рублей%n" ,averageSum);
     }
 }
