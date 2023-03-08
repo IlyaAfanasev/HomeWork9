@@ -1,8 +1,11 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static int[] generateRandomArray() {
@@ -51,5 +54,15 @@ public class Main {
         }
         averageSum=sum/ arr.length;
         System.out.printf("Средняя сумма трат за месяц составила-%.2f рублей%n" ,averageSum);
+    }
+    public static void task4() {
+        System.out.println("     Задача 4");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        int i=reverseFullName.length-1;
+        for (; i >=0; i--) {
+            System.out.print(reverseFullName[i]);
+
+        }
+
     }
 }
