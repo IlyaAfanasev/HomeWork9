@@ -17,6 +17,7 @@ public class Main {
         }
         return arr;
     }
+
     public static void task1() {
         System.out.println("     Задача 1");
         int[] arr = generateRandomArray();
@@ -24,7 +25,7 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
-        System.out.println("Сумма трат за месяц составила-" +sum+" рублей");
+        System.out.println("Сумма трат за месяц составила-" + sum + " рублей");
     }
 
     public static void task2() {
@@ -44,6 +45,7 @@ public class Main {
         System.out.println("Максимальная сумма трат за день составила-" + max + " рублей");
         System.out.println("Минимальная сумма трат за день составила-" + min + " рублей");
     }
+
     public static void task3() {
         System.out.println("     Задача 3");
         int[] arr = generateRandomArray();
@@ -52,14 +54,15 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
-        averageSum=sum/ arr.length;
-        System.out.printf("Средняя сумма трат за месяц составила-%.2f рублей%n" ,averageSum);
+        averageSum = sum / arr.length;
+        System.out.printf("Средняя сумма трат за месяц составила-%.2f рублей%n", averageSum);
     }
+
     public static void task4() {
         System.out.println("     Задача 4");
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        int i=reverseFullName.length-1;
-        for (; i >=0; i--) {
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        int i = reverseFullName.length - 1;
+        for (; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
 
         }
