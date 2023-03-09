@@ -22,8 +22,8 @@ public class Main {
         System.out.println("     Задача 1");
         int[] arr = generateRandomArray();
         int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
+        for (int i: arr) {
+            sum += i;
         }
         System.out.println("Сумма трат за месяц составила-" + sum + " рублей");
     }
@@ -31,15 +31,15 @@ public class Main {
     public static void task2() {
         System.out.println("     Задача 2");
         int[] arr = generateRandomArray();
-        int max = 0;
-        int min = 200_000;
-        for (int i = 0; i < arr.length; i++) {
-            if (max < arr[i]) {
-                max = arr[i];
+        int max = arr[0];
+        int min = arr[0];
+        for (int i :arr) {
+            if (max < i) {
+                max = i;
             }
-            if (min > arr[i]) ;
+            if (min > i) ;
             {
-                min = arr[i];
+                min = i;
             }
         }
         System.out.println("Максимальная сумма трат за день составила-" + max + " рублей");
@@ -51,8 +51,8 @@ public class Main {
         int[] arr = generateRandomArray();
         double sum = 0;
         double averageSum;
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
+        for (int i: arr) {
+            sum += i;
         }
         averageSum = sum / arr.length;
         System.out.printf("Средняя сумма трат за месяц составила-%.2f рублей%n", averageSum);
